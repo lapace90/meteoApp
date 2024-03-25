@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="meteoAPI.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Météo</h1>
+    <form id="search-form" action="#">
+      <input id="city-input" type="text" placeholder="Rechercher une ville">
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+  <main>
+    <div id="weather-container">
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+    </div>
+    <div id="error-container">
+      <p id="error-message"></p>
+    </div>
+  </main>
+</body>
+</html>
+
